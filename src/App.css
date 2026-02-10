@@ -1,0 +1,129 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Full page background */
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #e6f2ff, #cce6ff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Main app wrapper */
+.app {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Card wrapper */
+.outer-box {
+  width: 100%;
+  max-width: 420px;
+  padding: 20px;
+}
+
+/* Card */
+.inner-box {
+  background: #ffffff;
+  padding: 40px 35px;
+  border-radius: 16px;
+  box-shadow: 0 12px 35px rgba(0, 102, 204, 0.15);
+  transition: 0.3s ease;
+}
+
+/* Title */
+.login-container h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #004d99;
+  font-weight: 600;
+}
+
+/* Input group */
+.input-group {
+  position: relative;
+  margin-bottom: 18px;
+}
+
+/* Left icon */
+.left-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 18px;
+  opacity: 0.6;
+}
+
+/* Right icon (toggle password) */
+.right-icon {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 18px;
+  opacity: 0.7;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.right-icon:hover {
+  opacity: 1;
+  transform: translateY(-50%) scale(1.1);
+}
+
+/* Inputs */
+input {
+  width: 100%;
+  padding: 12px 40px;
+  border: 1px solid #cce0ff;
+  border-radius: 8px;
+  outline: none;
+  font-size: 14px;
+  background-color: #f8fbff;
+  transition: 0.3s ease;
+}
+
+input:focus {
+  border-color: #3399ff;
+  box-shadow: 0 0 0 3px rgba(51, 153, 255, 0.2);
+  background-color: #ffffff;
+}
+
+/* Paragraph */
+p {
+  font-size: 14px;
+  text-align: center;
+  margin-top: 12px;
+  color: #4d4d4d;
+}
+
+/* Clickable label */
+label {
+  color: #0073e6;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+label:hover {
+  color: #003d80;
+  text-decoration: underline;
+}
+
+/* Footer */
+.app-footer {
+  margin-top: 20px;
+  font-size: 13px;
+  color: #003d80;
+  text-align: center;
+  opacity: 0.8;
+}
